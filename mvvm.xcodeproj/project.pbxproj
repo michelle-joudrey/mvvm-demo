@@ -9,13 +9,19 @@
 /* Begin PBXBuildFile section */
 		D1AC4F951C59A44500A57E34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AC4F941C59A44500A57E34 /* main.m */; };
 		D1AC4F981C59A44500A57E34 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AC4F971C59A44500A57E34 /* AppDelegate.m */; };
-		D1AC4F9B1C59A44500A57E34 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AC4F9A1C59A44500A57E34 /* ViewController.m */; };
+		D1AC4F9B1C59A44500A57E34 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AC4F9A1C59A44500A57E34 /* MainViewController.m */; };
 		D1AC4F9E1C59A44500A57E34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1AC4F9C1C59A44500A57E34 /* Main.storyboard */; };
 		D1AC4FA11C59A44500A57E34 /* mvvm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D1AC4F9F1C59A44500A57E34 /* mvvm.xcdatamodeld */; };
 		D1AC4FA31C59A44500A57E34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1AC4FA21C59A44500A57E34 /* Assets.xcassets */; };
 		D1AC4FA61C59A44500A57E34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1AC4FA41C59A44500A57E34 /* LaunchScreen.storyboard */; };
 		D1AC4FB11C59A44500A57E34 /* mvvmTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AC4FB01C59A44500A57E34 /* mvvmTests.m */; };
 		D1AC4FBC1C59A44500A57E34 /* mvvmUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AC4FBB1C59A44500A57E34 /* mvvmUITests.m */; };
+		D1AC4FCB1C59AE6200A57E34 /* Drink.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AC4FCA1C59AE6200A57E34 /* Drink.m */; };
+		D1AC4FCE1C59AF6E00A57E34 /* DrinkViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AC4FCD1C59AF6E00A57E34 /* DrinkViewModel.m */; };
+		D1AC4FD11C59B45500A57E34 /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AC4FD01C59B45500A57E34 /* MyTableViewController.m */; };
+		D1AC4FD41C59BA8000A57E34 /* MainViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AC4FD31C59BA8000A57E34 /* MainViewModel.m */; };
+		D1AC4FD71C59BEBB00A57E34 /* MainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AC4FD61C59BEBB00A57E34 /* MainNavigationController.m */; };
+		D1AC4FDD1C59CFD500A57E34 /* DrinkTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AC4FDC1C59CFD500A57E34 /* DrinkTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +46,8 @@
 		D1AC4F941C59A44500A57E34 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D1AC4F961C59A44500A57E34 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D1AC4F971C59A44500A57E34 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D1AC4F991C59A44500A57E34 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D1AC4F9A1C59A44500A57E34 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D1AC4F991C59A44500A57E34 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		D1AC4F9A1C59A44500A57E34 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		D1AC4F9D1C59A44500A57E34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D1AC4FA01C59A44500A57E34 /* mvvm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = mvvm.xcdatamodel; sourceTree = "<group>"; };
 		D1AC4FA21C59A44500A57E34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +59,18 @@
 		D1AC4FB71C59A44500A57E34 /* mvvmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mvvmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1AC4FBB1C59A44500A57E34 /* mvvmUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mvvmUITests.m; sourceTree = "<group>"; };
 		D1AC4FBD1C59A44500A57E34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1AC4FC91C59AE6200A57E34 /* Drink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Drink.h; sourceTree = "<group>"; };
+		D1AC4FCA1C59AE6200A57E34 /* Drink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Drink.m; sourceTree = "<group>"; };
+		D1AC4FCC1C59AF6E00A57E34 /* DrinkViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrinkViewModel.h; sourceTree = "<group>"; };
+		D1AC4FCD1C59AF6E00A57E34 /* DrinkViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrinkViewModel.m; sourceTree = "<group>"; };
+		D1AC4FCF1C59B45500A57E34 /* MyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewController.h; sourceTree = "<group>"; };
+		D1AC4FD01C59B45500A57E34 /* MyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewController.m; sourceTree = "<group>"; };
+		D1AC4FD21C59BA8000A57E34 /* MainViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewModel.h; sourceTree = "<group>"; };
+		D1AC4FD31C59BA8000A57E34 /* MainViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewModel.m; sourceTree = "<group>"; };
+		D1AC4FD51C59BEBB00A57E34 /* MainNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainNavigationController.h; sourceTree = "<group>"; };
+		D1AC4FD61C59BEBB00A57E34 /* MainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainNavigationController.m; sourceTree = "<group>"; };
+		D1AC4FDB1C59CFD500A57E34 /* DrinkTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrinkTableViewCell.h; sourceTree = "<group>"; };
+		D1AC4FDC1C59CFD500A57E34 /* DrinkTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrinkTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,14 +123,26 @@
 			children = (
 				D1AC4F961C59A44500A57E34 /* AppDelegate.h */,
 				D1AC4F971C59A44500A57E34 /* AppDelegate.m */,
-				D1AC4F991C59A44500A57E34 /* ViewController.h */,
-				D1AC4F9A1C59A44500A57E34 /* ViewController.m */,
-				D1AC4F9C1C59A44500A57E34 /* Main.storyboard */,
+				D1AC4FD21C59BA8000A57E34 /* MainViewModel.h */,
+				D1AC4FD31C59BA8000A57E34 /* MainViewModel.m */,
 				D1AC4FA21C59A44500A57E34 /* Assets.xcassets */,
-				D1AC4FA41C59A44500A57E34 /* LaunchScreen.storyboard */,
 				D1AC4FA71C59A44500A57E34 /* Info.plist */,
+				D1AC4FA41C59A44500A57E34 /* LaunchScreen.storyboard */,
+				D1AC4F9C1C59A44500A57E34 /* Main.storyboard */,
 				D1AC4F9F1C59A44500A57E34 /* mvvm.xcdatamodeld */,
+				D1AC4FC91C59AE6200A57E34 /* Drink.h */,
+				D1AC4FCA1C59AE6200A57E34 /* Drink.m */,
+				D1AC4FCC1C59AF6E00A57E34 /* DrinkViewModel.h */,
+				D1AC4FCD1C59AF6E00A57E34 /* DrinkViewModel.m */,
+				D1AC4FCF1C59B45500A57E34 /* MyTableViewController.h */,
+				D1AC4FD01C59B45500A57E34 /* MyTableViewController.m */,
 				D1AC4F931C59A44500A57E34 /* Supporting Files */,
+				D1AC4F991C59A44500A57E34 /* MainViewController.h */,
+				D1AC4F9A1C59A44500A57E34 /* MainViewController.m */,
+				D1AC4FD51C59BEBB00A57E34 /* MainNavigationController.h */,
+				D1AC4FD61C59BEBB00A57E34 /* MainNavigationController.m */,
+				D1AC4FDB1C59CFD500A57E34 /* DrinkTableViewCell.h */,
+				D1AC4FDC1C59CFD500A57E34 /* DrinkTableViewCell.m */,
 			);
 			path = mvvm;
 			sourceTree = "<group>";
@@ -273,8 +303,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1AC4F9B1C59A44500A57E34 /* ViewController.m in Sources */,
+				D1AC4FCE1C59AF6E00A57E34 /* DrinkViewModel.m in Sources */,
+				D1AC4F9B1C59A44500A57E34 /* MainViewController.m in Sources */,
+				D1AC4FCB1C59AE6200A57E34 /* Drink.m in Sources */,
+				D1AC4FD41C59BA8000A57E34 /* MainViewModel.m in Sources */,
 				D1AC4F981C59A44500A57E34 /* AppDelegate.m in Sources */,
+				D1AC4FD71C59BEBB00A57E34 /* MainNavigationController.m in Sources */,
+				D1AC4FDD1C59CFD500A57E34 /* DrinkTableViewCell.m in Sources */,
+				D1AC4FD11C59B45500A57E34 /* MyTableViewController.m in Sources */,
 				D1AC4F951C59A44500A57E34 /* main.m in Sources */,
 				D1AC4FA11C59A44500A57E34 /* mvvm.xcdatamodeld in Sources */,
 			);

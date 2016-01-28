@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  DrinkTableViewCell.h
 //  mvvm
 //
 //  Created by Michelle Joudrey on 1/27/16.
@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
-
+@class DrinkViewModel;
+@interface DrinkTableViewCell : UITableViewCell
+@property DrinkViewModel *viewModel;
 @end
-
