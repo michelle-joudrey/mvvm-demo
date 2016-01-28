@@ -8,6 +8,7 @@
 
 #import "DrinkTableViewCell.h"
 #import "DrinkViewModel.h"
+#import <ReactiveCocoa/ReactiveCocoa.h>
 
 @interface DrinkTableViewCell ()
 @property IBOutlet UIImageView *imageImageView;
@@ -17,7 +18,8 @@
 @implementation DrinkTableViewCell
 - (void)layoutSubviews {
   NSAssert(self.viewModel, nil);
-  self.imageImageView.image = self.viewModel.image;
+  RAC(self.nameLabel, text) = RACObserve(self, viewModel.nameText);
+  RAC(self.imageImageView, image) = RACObserve(self, viewModel.image);
   self.nameLabel.text = self.viewModel.nameText;
 }
 @end

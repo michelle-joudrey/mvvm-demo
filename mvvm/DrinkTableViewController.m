@@ -7,10 +7,10 @@
 //
 
 #import "DrinkTableViewCell.h"
+#import "DrinkTableViewController.h"
 #import "MainViewModel.h"
-#import "MyTableViewController.h"
 
-@implementation MyTableViewController
+@implementation DrinkTableViewController
 - (void)viewDidLoad {
   NSAssert(self.viewModel, nil);
 }

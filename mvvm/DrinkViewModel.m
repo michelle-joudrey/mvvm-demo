@@ -7,6 +7,7 @@
 //
 
 #import "DrinkViewModel.h"
+#import <ReactiveCocoa/ReactiveCocoa.h>
 
 @implementation DrinkViewModel
 - (DrinkViewModel *)initWithDrink:(Drink *)drink {
@@ -14,13 +15,13 @@
   if (self) {
     _drink = drink;
     _nameText = drink.name;
-    [[NSOperationQueue new] addOperationWithBlock:^{
-      NSURL *imageUrl = [NSURL URLWithString:drink.imageUrl];
-      NSData *imageData = [NSData dataWithContentsOfURL:imageUrl];
-      [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-        _image = [UIImage imageWithData:imageData];
-      }];
-    }];
+    RAC(self, nameText) = RACObserve(drink, name);
+    NSURLRequest *request =
+        [NSURLRequest requestWithURL:[NSURL URLWithString:drink.imageUrl]];
+    RAC(self, image) = [[[NSURLConnection rac_sendAsynchronousRequest:request]
+        reduceEach:^id(NSURLResponse *response, NSData *data) {
+          return [[UIImage alloc] initWithData:data];
+        }] deliverOn:[RACScheduler mainThreadScheduler]];
   }
   return self;
 }

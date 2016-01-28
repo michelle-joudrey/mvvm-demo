@@ -1,19 +1,22 @@
 PODS:
-  - Box (2.0)
-  - ReactiveCocoa (2.5):
-    - ReactiveCocoa/UI (= 2.5)
-  - ReactiveCocoa/Core (2.5):
+  - ReactiveCocoa (4.0.0-RC.1):
+    - ReactiveCocoa/UI (= 4.0.0-RC.1)
+    - Result (~> 1.0)
+  - ReactiveCocoa/Core (4.0.0-RC.1):
     - ReactiveCocoa/no-arc
-  - ReactiveCocoa/no-arc (2.5)
-  - ReactiveCocoa/UI (2.5):
+    - Result (~> 1.0)
+  - ReactiveCocoa/no-arc (4.0.0-RC.1):
+    - Result (~> 1.0)
+  - ReactiveCocoa/UI (4.0.0-RC.1):
     - ReactiveCocoa/Core
+    - Result (~> 1.0)
+  - Result (1.0.1)
 
 DEPENDENCIES:
-  - Box
-  - ReactiveCocoa
+  - ReactiveCocoa (= 4.0.0-RC.1)
 
 SPEC CHECKSUMS:
-  Box: 70713ca3679e4e11ad4c470e9b58265f506fc659
-  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  ReactiveCocoa: 2b0f654beb7642b82cfd3fdb845205ae9889422c
+  Result: caef80340451e1f07492fa1e89117f83613bce24
 
 COCOAPODS: 0.39.0

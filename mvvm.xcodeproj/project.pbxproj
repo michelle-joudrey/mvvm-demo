@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7F127184613CE315603FC9B7 /* Pods_mvvm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04876ABCF24F2418C34E8CAB /* Pods_mvvm.framework */; };
+		58D73006487103626B3AD1C9 /* Pods_mvvm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D7E14E914BDA62D0529CE18 /* Pods_mvvm.framework */; };
 		D1AC4F951C59A44500A57E34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AC4F941C59A44500A57E34 /* main.m */; };
 		D1AC4F981C59A44500A57E34 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AC4F971C59A44500A57E34 /* AppDelegate.m */; };
 		D1AC4F9B1C59A44500A57E34 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AC4F9A1C59A44500A57E34 /* MainViewController.m */; };
@@ -19,7 +19,7 @@
 		D1AC4FBC1C59A44500A57E34 /* mvvmUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AC4FBB1C59A44500A57E34 /* mvvmUITests.m */; };
 		D1AC4FCB1C59AE6200A57E34 /* Drink.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AC4FCA1C59AE6200A57E34 /* Drink.m */; };
 		D1AC4FCE1C59AF6E00A57E34 /* DrinkViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AC4FCD1C59AF6E00A57E34 /* DrinkViewModel.m */; };
-		D1AC4FD11C59B45500A57E34 /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AC4FD01C59B45500A57E34 /* MyTableViewController.m */; };
+		D1AC4FD11C59B45500A57E34 /* DrinkTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AC4FD01C59B45500A57E34 /* DrinkTableViewController.m */; };
 		D1AC4FD41C59BA8000A57E34 /* MainViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AC4FD31C59BA8000A57E34 /* MainViewModel.m */; };
 		D1AC4FD71C59BEBB00A57E34 /* MainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AC4FD61C59BEBB00A57E34 /* MainNavigationController.m */; };
 		D1AC4FDD1C59CFD500A57E34 /* DrinkTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AC4FDC1C59CFD500A57E34 /* DrinkTableViewCell.m */; };
@@ -43,9 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04876ABCF24F2418C34E8CAB /* Pods_mvvm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mvvm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16EA84EFBE22B4F426138478 /* Pods-mvvm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mvvm.release.xcconfig"; path = "Pods/Target Support Files/Pods-mvvm/Pods-mvvm.release.xcconfig"; sourceTree = "<group>"; };
 		342DDB60D03CA35ED97B6801 /* Pods-mvvm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mvvm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mvvm/Pods-mvvm.debug.xcconfig"; sourceTree = "<group>"; };
+		8D7E14E914BDA62D0529CE18 /* Pods_mvvm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mvvm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1AC4F901C59A44500A57E34 /* mvvm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mvvm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1AC4F941C59A44500A57E34 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D1AC4F961C59A44500A57E34 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -67,8 +67,8 @@
 		D1AC4FCA1C59AE6200A57E34 /* Drink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Drink.m; sourceTree = "<group>"; };
 		D1AC4FCC1C59AF6E00A57E34 /* DrinkViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrinkViewModel.h; sourceTree = "<group>"; };
 		D1AC4FCD1C59AF6E00A57E34 /* DrinkViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrinkViewModel.m; sourceTree = "<group>"; };
-		D1AC4FCF1C59B45500A57E34 /* MyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewController.h; sourceTree = "<group>"; };
-		D1AC4FD01C59B45500A57E34 /* MyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewController.m; sourceTree = "<group>"; };
+		D1AC4FCF1C59B45500A57E34 /* DrinkTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrinkTableViewController.h; sourceTree = "<group>"; };
+		D1AC4FD01C59B45500A57E34 /* DrinkTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrinkTableViewController.m; sourceTree = "<group>"; };
 		D1AC4FD21C59BA8000A57E34 /* MainViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewModel.h; sourceTree = "<group>"; };
 		D1AC4FD31C59BA8000A57E34 /* MainViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewModel.m; sourceTree = "<group>"; };
 		D1AC4FD51C59BEBB00A57E34 /* MainNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainNavigationController.h; sourceTree = "<group>"; };
@@ -82,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F127184613CE315603FC9B7 /* Pods_mvvm.framework in Frameworks */,
+				58D73006487103626B3AD1C9 /* Pods_mvvm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,7 +106,7 @@
 		1E13B2F50C17CE66B7BAAA07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				04876ABCF24F2418C34E8CAB /* Pods_mvvm.framework */,
+				8D7E14E914BDA62D0529CE18 /* Pods_mvvm.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -158,8 +158,8 @@
 				D1AC4FCA1C59AE6200A57E34 /* Drink.m */,
 				D1AC4FCC1C59AF6E00A57E34 /* DrinkViewModel.h */,
 				D1AC4FCD1C59AF6E00A57E34 /* DrinkViewModel.m */,
-				D1AC4FCF1C59B45500A57E34 /* MyTableViewController.h */,
-				D1AC4FD01C59B45500A57E34 /* MyTableViewController.m */,
+				D1AC4FCF1C59B45500A57E34 /* DrinkTableViewController.h */,
+				D1AC4FD01C59B45500A57E34 /* DrinkTableViewController.m */,
 				D1AC4F931C59A44500A57E34 /* Supporting Files */,
 				D1AC4F991C59A44500A57E34 /* MainViewController.h */,
 				D1AC4F9A1C59A44500A57E34 /* MainViewController.m */,
@@ -385,7 +385,7 @@
 				D1AC4F981C59A44500A57E34 /* AppDelegate.m in Sources */,
 				D1AC4FD71C59BEBB00A57E34 /* MainNavigationController.m in Sources */,
 				D1AC4FDD1C59CFD500A57E34 /* DrinkTableViewCell.m in Sources */,
-				D1AC4FD11C59B45500A57E34 /* MyTableViewController.m in Sources */,
+				D1AC4FD11C59B45500A57E34 /* DrinkTableViewController.m in Sources */,
 				D1AC4F951C59A44500A57E34 /* main.m in Sources */,
 				D1AC4FA11C59A44500A57E34 /* mvvm.xcdatamodeld in Sources */,
 			);

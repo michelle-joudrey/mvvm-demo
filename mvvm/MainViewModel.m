@@ -29,9 +29,8 @@
                      @"image/600x/9df78eab33525d08d6e5fb8d27136e95/D/r/"
                      @"Drpepper-2-2.jpg"],
     [[Drink alloc] initWithName:@"Sprite"
-                    andImageUrl:@"http://www.mezincashandcarry.com/"
-                                @"wp-content/uploads/2015/05/sprite.jpg"
-                                @"964bdf570c36Large.jpg"],
+                    andImageUrl:@"http://www.mezincashandcarry.com/wp-content/"
+                                @"uploads/2015/05/sprite.jpg"],
   ]];
 }
 - (id)initWithDrinks:(NSArray *)drinks {

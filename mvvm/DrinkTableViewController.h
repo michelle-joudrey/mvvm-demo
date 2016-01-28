@@ -9,7 +9,7 @@
 #import "MainViewModel.h"
 #import <UIKit/UIKit.h>
 
-@interface MyTableViewController
+@interface DrinkTableViewController
     : UITableViewController <UITableViewDataSource, UITableViewDelegate>
 @property MainViewModel *viewModel;
 @end

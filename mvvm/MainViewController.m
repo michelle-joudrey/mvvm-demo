@@ -7,7 +7,7 @@
 //
 
 #import "MainViewController.h"
-#import "MyTableViewController.h"
+#import "DrinkTableViewController.h"
 
 @interface MainViewController ()
 
@@ -18,8 +18,8 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
   NSAssert(self.viewModel, nil);
   if ([segue.destinationViewController
-          isKindOfClass:[MyTableViewController class]]) {
-    MyTableViewController *vc = segue.destinationViewController;
+          isKindOfClass:[DrinkTableViewController class]]) {
+    DrinkTableViewController *vc = segue.destinationViewController;
     vc.viewModel = self.viewModel;
   }
 }
