@@ -6,13 +6,14 @@
 //  Copyright © 2016 com. All rights reserved.
 //
 
-#import "Drink.h"
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+@class Drink;
 
 @interface DrinkViewModel : NSObject
 - (DrinkViewModel *)initWithDrink:(Drink *)model;
 @property(readonly) NSString *nameText;
 @property(readonly) UIImage *image;
-@property(readonly) Drink *drink;
+- (BOOL)validateNameText:(NSString *)nameText;
+- (void)editNameText:(NSString *)nameText;
 @end

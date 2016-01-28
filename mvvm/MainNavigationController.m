@@ -6,14 +6,13 @@
 //  Copyright © 2016 com. All rights reserved.
 //
 
+#import "DrinkTableViewController.h"
 #import "MainNavigationController.h"
-#import "MainViewController.h"
 
 @implementation MainNavigationController
 - (void)viewDidLoad {
-  if ([self.topViewController isKindOfClass:[MainViewController class]]) {
-    MainViewController *vc = (MainViewController *)self.topViewController;
-    vc.viewModel = self.viewModel;
-  }
+  DrinkTableViewController *vc =
+      (DrinkTableViewController *)self.topViewController;
+  vc.viewModel = self.viewModel;
 }
 @end

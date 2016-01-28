@@ -6,8 +6,13 @@
 //  Copyright © 2016 com. All rights reserved.
 //
 
+#import "Drink.h"
 #import "DrinkViewModel.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
+
+@interface DrinkViewModel ()
+@property Drink *drink;
+@end
 
 @implementation DrinkViewModel
 - (DrinkViewModel *)initWithDrink:(Drink *)drink {
@@ -24,5 +29,11 @@
         }] deliverOn:[RACScheduler mainThreadScheduler]];
   }
   return self;
+}
+- (BOOL)validateNameText:(NSString *)nameText {
+  return nameText.length > 0;
+}
+- (void)editNameText:(NSString *)nameText {
+  self.drink.name = nameText;
 }
 @end

@@ -16,8 +16,11 @@
 @end
 
 @implementation DrinkTableViewCell
-- (void)layoutSubviews {
-  NSAssert(self.viewModel, nil);
+- (void)setViewModel:(DrinkViewModel *)viewModel {
+  _viewModel = viewModel;
+  NSAssert(viewModel, nil);
+  NSAssert(self.nameLabel, nil);
+  NSAssert(self.imageImageView, nil);
   RAC(self.nameLabel, text) = RACObserve(self, viewModel.nameText);
   RAC(self.imageImageView, image) = RACObserve(self, viewModel.image);
   self.nameLabel.text = self.viewModel.nameText;

@@ -8,6 +8,7 @@
 
 #import "DrinkTableViewCell.h"
 #import "DrinkTableViewController.h"
+#import "EditDrinkViewController.h"
 #import "MainViewModel.h"
 
 @implementation DrinkTableViewController
@@ -23,13 +24,13 @@
   UITableViewCell *cell =
       [tableView dequeueReusableCellWithIdentifier:@"MyReuseId"
                                       forIndexPath:indexPath];
-  if (!cell) {
-    [NSException raise:@"Whoops" format:@""];
-  }
-  if ([cell isKindOfClass:[DrinkTableViewCell class]]) {
-    DrinkTableViewCell *c = (DrinkTableViewCell *)cell;
-    c.viewModel = [self.viewModel drinkViewModelForIndex:indexPath.row];
-  }
+  DrinkTableViewCell *c = (DrinkTableViewCell *)cell;
+  c.viewModel = [self.viewModel drinkViewModelForIndex:indexPath.row];
   return cell;
+}
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+  EditDrinkViewController *vc = segue.destinationViewController;
+  DrinkTableViewCell *cell = sender;
+  vc.viewModel = cell.viewModel;
 }
 @end

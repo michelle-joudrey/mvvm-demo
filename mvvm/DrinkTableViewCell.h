@@ -10,5 +10,5 @@
 
 @class DrinkViewModel;
 @interface DrinkTableViewCell : UITableViewCell
-@property DrinkViewModel *viewModel;
+@property(nonatomic) DrinkViewModel *viewModel;
 @end

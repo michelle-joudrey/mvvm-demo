@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="RyY-bZ-tSJ">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -15,47 +16,14 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="RhV-M1-1vL"/>
+                        <segue destination="W9I-ER-AUK" kind="relationship" relationship="rootViewController" id="KWh-3f-fkO"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Ij-kD-1TI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-730" y="459"/>
-        </scene>
-        <!--MVVM Demo-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IZU-uQ-PDN">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <connections>
-                                    <segue destination="W9I-ER-AUK" kind="embed" id="uNy-C5-3kO"/>
-                                </connections>
-                            </containerView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="IZU-uQ-PDN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="C3Q-Ol-2el"/>
-                            <constraint firstItem="IZU-uQ-PDN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PNA-bv-G7b"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="IZU-uQ-PDN" secondAttribute="bottom" id="QOq-ca-zhB"/>
-                            <constraint firstAttribute="trailing" secondItem="IZU-uQ-PDN" secondAttribute="trailing" id="qAy-7s-M9M"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="MVVM Demo" id="x5I-ht-MqZ"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
             <point key="canvasLocation" x="-50" y="459"/>
         </scene>
-        <!--Drink Table View Controller-->
+        <!--Drinks-->
         <scene sceneID="PdN-V6-7mM">
             <objects>
                 <tableViewController id="W9I-ER-AUK" customClass="DrinkTableViewController" sceneMemberID="viewController">
@@ -65,7 +33,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MyReuseId" rowHeight="112" id="Ncn-Df-keT" customClass="DrinkTableViewCell">
-                                <rect key="frame" x="0.0" y="28" width="600" height="112"/>
+                                <rect key="frame" x="0.0" y="92" width="600" height="112"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ncn-Df-keT" id="txX-3E-3hu">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="111.5"/>
@@ -96,6 +64,7 @@
                                 <connections>
                                     <outlet property="imageImageView" destination="W8I-bk-1eB" id="vOt-2i-w1R"/>
                                     <outlet property="nameLabel" destination="wOS-7E-tw9" id="klv-XT-sOW"/>
+                                    <segue destination="a1l-ky-MYI" kind="show" id="l1X-ng-5ea"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -105,10 +74,69 @@
                             <outlet property="delegate" destination="W9I-ER-AUK" id="2Ph-da-puz"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Drinks" id="LpV-12-GCE"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GLS-iz-K6K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="619" y="459"/>
+        </scene>
+        <!--Edit Drink-->
+        <scene sceneID="SoV-SE-9LB">
+            <objects>
+                <viewController id="a1l-ky-MYI" customClass="EditDrinkViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ypy-9t-I5P"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gsw-Ya-OJV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="V15-jB-ZVA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ghp-rL-ZWV">
+                                <rect key="frame" x="20" y="136" width="560" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="JZZ-fk-LAL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mSE-I8-C9f">
+                                <rect key="frame" x="20" y="96" width="55" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="8he-B4-8S7"/>
+                                    <constraint firstAttribute="height" constant="21" id="k74-8N-VNJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ghp-rL-ZWV" firstAttribute="leading" secondItem="V15-jB-ZVA" secondAttribute="leadingMargin" id="5bo-bM-Agh"/>
+                            <constraint firstItem="ghp-rL-ZWV" firstAttribute="top" secondItem="mSE-I8-C9f" secondAttribute="bottom" constant="19" id="8ql-pE-bAd"/>
+                            <constraint firstItem="mSE-I8-C9f" firstAttribute="top" secondItem="Ypy-9t-I5P" secondAttribute="bottom" constant="32" id="YD0-fR-6RE"/>
+                            <constraint firstItem="mSE-I8-C9f" firstAttribute="leading" secondItem="V15-jB-ZVA" secondAttribute="leadingMargin" id="w0e-TM-pgw"/>
+                            <constraint firstItem="ghp-rL-ZWV" firstAttribute="trailing" secondItem="V15-jB-ZVA" secondAttribute="trailingMargin" id="wiH-nZ-iqd"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Edit Drink" id="9kU-N9-nwU">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Dt5-ee-Jxj">
+                            <connections>
+                                <action selector="saveDrink:" destination="a1l-ky-MYI" id="vtS-P0-7ej"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="drinkNameTextField" destination="ghp-rL-ZWV" id="6oR-K1-e6b"/>
+                        <outlet property="saveButton" destination="Dt5-ee-Jxj" id="HyE-eJ-d8K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NP0-6I-Ryx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1290" y="459"/>
         </scene>
     </scenes>
 </document>

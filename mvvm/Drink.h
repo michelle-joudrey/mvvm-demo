@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface Drink : NSObject
-@property(readonly) NSString *name;
-@property(readonly) NSString *imageUrl;
-- (id)initWithName:(NSString*)name andImageUrl:(NSString*)imageUrl;
+@property NSString *name;
+@property NSString *imageUrl;
+- (id)initWithName:(NSString *)name andImageUrl:(NSString *)imageUrl;
 @end
